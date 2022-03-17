@@ -50,3 +50,29 @@ list.c:37:1: error: control reaches end of non-void function [-Werror=return-typ
 cc1: all warnings being treated as errors
 Compilation failed
 20378c7
+Thu Mar 17 23:38:08 UTC 2022: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:0:
+list.c: In function ‘createList’:
+list.c:33:7: error: expected identifier or ‘(’ before ‘->’ token
+   List->head=NULL;
+       ^~
+list.c:34:7: error: expected identifier or ‘(’ before ‘->’ token
+   List->tail=NULL;
+       ^~
+list.c:35:7: error: expected identifier or ‘(’ before ‘->’ token
+   List->current=NULL;
+       ^~
+list.c:36:10: error: expected expression before ‘List’
+   return List;
+          ^~~~
+list.c:32:9: error: unused variable ‘Lista’ [-Werror=unused-variable]
+   List *Lista= (List*) malloc(sizeof(List));
+         ^~~~~
+list.c:37:1: error: control reaches end of non-void function [-Werror=return-type]
+ }
+ ^
+cc1: all warnings being treated as errors
+Compilation failed
+8e7030c
