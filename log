@@ -2,3 +2,24 @@ Thu Mar 17 22:50:27 UTC 2022:
  tests:  0|6
 total_score: 0/70
 95438ce
+Thu Mar 17 23:35:33 UTC 2022: 
+ list.c | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+In file included from test.c:5:0:
+list.c: In function ‘createList’:
+list.c:33:7: error: expected identifier or ‘(’ before ‘->’ token
+   List->current=0;
+       ^~
+list.c:34:10: error: ‘S’ undeclared (first use in this function)
+   return S;
+          ^
+list.c:34:10: note: each undeclared identifier is reported only once for each function it appears in
+list.c:32:9: error: unused variable ‘Lista’ [-Werror=unused-variable]
+   List *Lista= (List*) malloc(sizeof(List));
+         ^~~~~
+list.c:35:1: error: control reaches end of non-void function [-Werror=return-type]
+ }
+ ^
+cc1: all warnings being treated as errors
+Compilation failed
+15c87a5
