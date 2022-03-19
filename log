@@ -131,3 +131,21 @@ list.c:43:10: error: return makes pointer from integer without a cast [-Werror=i
 cc1: all warnings being treated as errors
 Compilation failed
 6d62010
+Sat Mar 19 23:13:43 UTC 2022: 
+ list.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:5:0:
+list.c: In function ‘firstList’:
+list.c:41:14: error: assignment makes pointer from integer without a cast [-Werror=int-conversion]
+   list->head = dato;
+              ^
+list.c:42:23: error: ‘list’ is a pointer; did you mean to use ‘->’?
+   list->current = list.head;
+                       ^
+                       ->
+list.c:43:10: error: return makes pointer from integer without a cast [-Werror=int-conversion]
+   return dato;
+          ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+b5d0d97
