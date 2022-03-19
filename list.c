@@ -37,7 +37,10 @@ List * createList() {
 }
 
 void * firstList(List * list) {
-    return NULL;
+  int dato;
+  list.head = dato;
+  list.current = list.head;
+  return dato;
 }
 
 void * nextList(List * list) {

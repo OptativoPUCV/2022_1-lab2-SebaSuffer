@@ -108,3 +108,26 @@ Thu Mar 17 23:38:49 UTC 2022:
  tests:  1|5
 total_score: 10/70
 e2cb9af
+Sat Mar 19 23:13:32 UTC 2022: 
+ list.c | 5 ++++-
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+In file included from test.c:5:0:
+list.c: In function ‘firstList’:
+list.c:41:7: error: ‘list’ is a pointer; did you mean to use ‘->’?
+   list.head = dato;
+       ^
+       ->
+list.c:42:7: error: ‘list’ is a pointer; did you mean to use ‘->’?
+   list.current = list.head;
+       ^
+       ->
+list.c:42:22: error: ‘list’ is a pointer; did you mean to use ‘->’?
+   list.current = list.head;
+                      ^
+                      ->
+list.c:43:10: error: return makes pointer from integer without a cast [-Werror=int-conversion]
+   return dato;
+          ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+6d62010
