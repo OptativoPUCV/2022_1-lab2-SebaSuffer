@@ -38,8 +38,8 @@ List * createList() {
 
 void * firstList(List * list) {
   if (list->head != NULL)
-    return NULL;
-  return list->head->data;
+    return list->head->data;
+  return NULL;
 }
 
 void * nextList(List * list) {
