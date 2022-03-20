@@ -276,3 +276,21 @@ list.c:53:25: error: ‘Node {aka struct Node}’ has no member named ‘tail’
                          ^~
 Compilation failed
 d342322
+Sun Mar 20 16:44:36 UTC 2022: 
+ list.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+In file included from test.c:5:0:
+list.c: In function ‘lastList’:
+list.c:52:3: error: this ‘if’ clause does not guard... [-Werror=misleading-indentation]
+   if (list->tail != NULL)
+   ^~
+list.c:54:5: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+     Return list->current->data;
+     ^~~~~~
+list.c:54:5: error: unknown type name ‘Return’
+list.c:54:16: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘->’ token
+     Return list->current->data;
+                ^~
+cc1: all warnings being treated as errors
+Compilation failed
+84e411e
