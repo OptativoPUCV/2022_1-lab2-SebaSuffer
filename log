@@ -337,3 +337,9 @@ list.c:49:5: error: expected ‘;’ before ‘return’
      ^~~~~~
 Compilation failed
 2e48f78
+Sun Mar 20 16:52:43 UTC 2022: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  3|5
+total_score: 15/70
+acc42a3
