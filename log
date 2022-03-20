@@ -250,3 +250,13 @@ list.c:57:3: error: expected ‘;’ before ‘}’ token
 cc1: all warnings being treated as errors
 Compilation failed
 7f21f76
+Sun Mar 20 00:22:23 UTC 2022: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+In file included from test.c:5:0:
+list.c: In function ‘lastList’:
+list.c:57:3: error: expected ‘;’ before ‘}’ token
+   }
+   ^
+Compilation failed
+b2ac11d
