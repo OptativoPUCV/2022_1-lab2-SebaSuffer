@@ -236,3 +236,17 @@ Sat Mar 19 23:56:39 UTC 2022:
  tests:  2|5
 total_score: 15/70
 51b52f4
+Sun Mar 20 00:21:41 UTC 2022: 
+ list.c | 8 ++++++--
+ 1 file changed, 6 insertions(+), 2 deletions(-)
+In file included from test.c:5:0:
+list.c: In function ‘lastList’:
+list.c:55:20: error: statement with no effect [-Werror=unused-value]
+       list->current->next;
+       ~~~~~~~~~~~~~^~~~~~
+list.c:57:3: error: expected ‘;’ before ‘}’ token
+   }
+   ^
+cc1: all warnings being treated as errors
+Compilation failed
+7f21f76
