@@ -327,3 +327,13 @@ list.c:63:25: error: ‘List {aka struct List}’ has no member named ‘prev’
                          ^~
 Compilation failed
 6199438
+Sun Mar 20 16:51:09 UTC 2022: 
+ list.c | 5 ++++-
+ 1 file changed, 4 insertions(+), 1 deletion(-)
+In file included from test.c:5:0:
+list.c: In function ‘nextList’:
+list.c:49:5: error: expected ‘;’ before ‘return’
+     return list->current->next->data;
+     ^~~~~~
+Compilation failed
+2e48f78
