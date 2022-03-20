@@ -317,3 +317,13 @@ list.c:63:5: note: ...this statement, but the latter is misleadingly indented as
 cc1: all warnings being treated as errors
 Compilation failed
 6911c8d
+Sun Mar 20 16:49:55 UTC 2022: 
+ list.c | 2 ++
+ 1 file changed, 2 insertions(+)
+In file included from test.c:5:0:
+list.c: In function ‘prevList’:
+list.c:63:25: error: ‘List {aka struct List}’ has no member named ‘prev’
+     list->current = list->prev;
+                         ^~
+Compilation failed
+6199438
