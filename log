@@ -300,3 +300,20 @@ Sun Mar 20 16:47:25 UTC 2022:
  tests:  3|5
 total_score: 15/70
 424ee53
+Sun Mar 20 16:49:36 UTC 2022: 
+ list.c | 1 +
+ 1 file changed, 1 insertion(+)
+In file included from test.c:5:0:
+list.c: In function ‘prevList’:
+list.c:62:25: error: ‘List {aka struct List}’ has no member named ‘prev’
+     list->current = list->prev;
+                         ^~
+list.c:61:3: error: this ‘if’ clause does not guard... [-Werror=misleading-indentation]
+   if (list->current != NULL && list->current->prev != NULL)
+   ^~
+list.c:63:5: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+     return list->current->prev->data;
+     ^~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+6911c8d
