@@ -387,3 +387,9 @@ list.c:86:10: error: variable ‘n’ set but not used [-Werror=unused-but-set-v
 cc1: all warnings being treated as errors
 Compilation failed
 a0d4d88
+Sun Mar 20 23:35:59 UTC 2022: 
+ list.c | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+ tests:  9|3
+total_score: 35/70
+f0900ae
