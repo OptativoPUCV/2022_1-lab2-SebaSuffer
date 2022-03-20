@@ -260,3 +260,9 @@ list.c:57:3: error: expected ‘;’ before ‘}’ token
    ^
 Compilation failed
 b2ac11d
+Sun Mar 20 00:33:15 UTC 2022: 
+ list.c | 8 ++------
+ 1 file changed, 2 insertions(+), 6 deletions(-)
+ tests:  2|5
+total_score: 15/70
+5b68c28
