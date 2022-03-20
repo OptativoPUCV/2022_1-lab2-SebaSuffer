@@ -349,3 +349,12 @@ Sun Mar 20 16:57:11 UTC 2022:
  tests:  9|3
 total_score: 35/70
 1fe4482
+Sun Mar 20 23:19:07 UTC 2022: 
+ list.c | 9 +++++++++
+ 1 file changed, 9 insertions(+)
+In file included from test.c:5:0:
+list.c:82:1: error: expected identifier or ‘(’ before ‘}’ token
+ }
+ ^
+Compilation failed
+3f8b192
