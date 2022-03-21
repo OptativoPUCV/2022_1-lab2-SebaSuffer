@@ -672,3 +672,9 @@ list.c:113:1: error: expected identifier or ‘(’ before ‘}’ token
 cc1: all warnings being treated as errors
 Compilation failed
 118b433
+Mon Mar 21 01:57:13 UTC 2022: 
+ list.c | 1 -
+ 1 file changed, 1 deletion(-)
+ tests:  10|2
+total_score: 45/70
+f2300cf
