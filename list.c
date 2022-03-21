@@ -96,16 +96,16 @@ void pushCurrent(List * list, void * data) {
       list->current = n;
       list->current->next->prev = n;
     }
-    else
-    {
-      list->tail = n;
-      list->head = n;
-    }
     if (list->current->prev != NULL)
       list->current->prev->next = n;
     else
       list->head->prev = n;
   }
+  else
+    {
+      list->tail = n;
+      list->head = n;
+    }
 }
 
 void * popFront(List * list) {
