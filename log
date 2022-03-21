@@ -720,3 +720,27 @@ Mon Mar 21 02:19:41 UTC 2022:
  tests:  10|2
 total_score: 45/70
 c5b45b0
+Mon Mar 21 02:26:48 UTC 2022: 
+ list.c | 3 ++-
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+In file included from test.c:5:0:
+list.c: In function ‘pushCurrent’:
+list.c:101:5: error: this ‘if’ clause does not guard... [-Werror=misleading-indentation]
+     if (list->current->prev != NULL)
+     ^~
+list.c:103:7: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+       list->current->prev->next = n;
+       ^~~~
+list.c:104:5: error: expected ‘}’ before ‘else’
+     else
+     ^~~~
+list.c: At top level:
+list.c:109:3: error: expected identifier or ‘(’ before ‘else’
+   else
+   ^~~~
+list.c:114:1: error: expected identifier or ‘(’ before ‘}’ token
+ }
+ ^
+cc1: all warnings being treated as errors
+Compilation failed
+1afe6df
