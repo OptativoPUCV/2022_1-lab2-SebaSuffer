@@ -428,3 +428,22 @@ Mon Mar 21 00:02:33 UTC 2022:
  tests:  9|3
 total_score: 35/70
 f8df66d
+Mon Mar 21 00:06:22 UTC 2022: 
+ list.c | 7 +++----
+ 1 file changed, 3 insertions(+), 4 deletions(-)
+In file included from test.c:5:0:
+list.c: In function ‘pushFront’:
+list.c:78:3: error: expected ‘}’ before ‘else’
+   else
+   ^~~~
+list.c:78:3: error: this ‘else’ clause does not guard... [-Werror=misleading-indentation]
+list.c:80:5: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘else’
+     list->tail = n;
+     ^~~~
+list.c: At top level:
+list.c:83:1: error: expected ‘=’, ‘,’, ‘;’, ‘asm’ or ‘__attribute__’ before ‘void’
+ void pushBack(List * list, void * data) {
+ ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+9c6de51
